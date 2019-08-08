@@ -5,7 +5,7 @@ Projeto que possui uma programação introdutória, não possuindo uma estrutura
 
 # Curiosos
 
-Para quem tiver a curiosidade dever mais algum detalhe sem ospedar o sistema, temos o diretório de documentação para supri as dúvidas.
+Se surgiu curiosidade em algum detalhe, e não quer hospedar o sistema para testar, temos o diretório de documentos para supri as dúvidas. 
 
 # Algumas imagens do sistema 
   

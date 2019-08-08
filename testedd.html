@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RotEnd</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--icone-->
+  <link rel="stylesheet" href="css/estilo_inicial.css">
+</head>
+<body ><!--teal lighten-5-->
+
+     <ul id="menu-mobile" class="side-nav fixed">
+          <li><div class="user-view">
+            <div class="background">
+              <img src="img/banner.jpg">
+            </div>
+            <a href="#!user"><img class="circle" src="img/perfil.jpg"></a>
+            <a href="#!name"><span class="white-text name">John Doe</span></a>
+            <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+          </div></li>
+                <li><a href="home.php"><i class="material-icons">explore</i>Inicial</a></li>
+                <li><a href="obs_atend.php">Observações</a></li>
+                <li><a href="Marcar_pontos.php">Nova Rota</a></li>
+                <li><a href="list_rotas.php">Consultar Rotas</a></li>
+                <li><div class="divider"></div></li>
+                <!--<li><a class="subheader">Subheader</a></li>-->
+                
+                <li><a class=" red-text" href="sair.php">Sair</a></li>   
+        </ul>
+         <a href="" data-activates="menu-mobile" class="button-collapse" id="icone_menu"><i class="material-icons">menu</i>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+    $(".button-collapse").sideNav();
+    //slider
+    $(document).ready(function(){
+          $('.slider').slider({
+            transition: 600,
+          });
+      });
+  </script>
+</body>
+</html>

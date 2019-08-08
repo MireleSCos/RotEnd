@@ -1,0 +1,40 @@
+
+.cartao{
+	border-right: 1px dashed #b0bec5;
+}
+.cartao_login{
+	background: white;
+	border-radius: 1.5%;
+}
+.cartao-cadastro{
+	background: white;
+	border-radius: 1.5%;
+}
+.barra-nav{
+	height: 90px;
+}
+
+
+p{
+	text-align: justify;
+	font-family: verdana;
+	color: #eceff1;
+	right: 20px;
+
+}
+h5#cadastro{
+	font-family: georgia;
+	color:black;
+}
+h5{
+	font-family: georgia;
+	color:white;
+}
+h3{
+	font-family: georgia;
+	color:black;
+}
+footer{
+	width: 100%;
+}
+

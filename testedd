@@ -1,0 +1,107 @@
+<?php
+session_start();
+
+if(!isset($_SESSION['acesso']) || ($_SESSION['acesso'] != "OK") ) {
+  $_SESSION["acesso"] = "Você deverá se autenticar!";
+  header("Location: index.php");
+
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RotEnd</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--icone-->
+
+</head>
+<body class="teal lighten-5"><!--teal lighten-5-->
+  <div class="row">
+    <div class="col l3 s1">
+      <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+          
+      <ul id="slide-out" class="side-nav fixed teal lighten-4" >
+        <li><div>
+          <div class="background">
+                <br>
+                <img class="responsive-img" src="img/logo2.png">
+                <br>
+              </div>
+          
+        </div></li>
+        <li><a href="#"><i class="material-icons">explore</i>Bem vindo, <?php $nome = $_SESSION["nome"]; echo"$nome";?></a></li>
+
+        <li><a href="obs_atend.php">Atendimentos</a></li>
+        <li><div class="divider"></div></li>
+        <!--<li><a class="subheader">Subheader</a></li>-->
+        
+        <li><a class=" red-text" href="sair.php">Sair</a></li>
+        
+      </ul>
+    </div>
+    <div class="col l9 s10 conteudo-do-home">
+    <br>
+    <br>
+      <div class="row">
+           <div class="col l11 s12 offset-l1">
+           <blockquote style="background-color: #f1f8e9;">
+                    <h3> Rotas à traçar</h3>
+                </blockquote> 
+               
+            </div>
+          </div>
+      <div class="row">
+          <div class="col s6 s8 offset-l1 offset-s1">
+            <div class="card">
+              <div class="card-image">
+                <img  class="responsive-img"  src="img/rotas_2.jpg">
+                <span class="card-title black-text">Nova Rota</span> 
+                <a class="btn-floating halfway-fab waves-effect waves-light  red" href="Marcar_pontos.php"><i class=" material-icons">add</i></a>
+              </div>
+              <div class="card-content">
+                <p>Vamos começar uma nova rota ? Click no botão acima !</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+           <div class="col l11 s12 offset-l1">
+           <blockquote style="background-color: #f1f8e9;">
+                    <h3> Rotas já traçadas</h3>
+                </blockquote> 
+               
+            </div>
+          </div>
+      <div class="row">
+          <div class="col s6 s8 offset-l1 offset-s1">
+            <div class="card">
+              <div class="card-image">
+                <img class="responsive-img" src="img/rota.jpg">
+                <span class="card-title black-text">Consultar</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light red" href="list_rotas.php"><i class="material-icons">done</i></a>
+              </div>
+              <div class="card-content">
+                <p>Visualize e relembre suas rotas !</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(
+          function() {
+            $(".button-collapse").sideNav();
+         }
+      );
+        
+  </script>
+</body>
+</html>
